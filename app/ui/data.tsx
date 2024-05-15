@@ -4,8 +4,7 @@ export const AboutMe = {
   title: "About Me",
   description: (
     <div className="text-center">
-      Hello, As you known, I'm a website developer. I will do my best to make a
-      website like your order. That's all you need to know.
+      {"Hello, As you known, I am a website developer. I will do my best to make a website like your order. That is all you need to know."}
       <img
         alt="just a funny picture"
         className="w-[400px] max-w-full mt-3 "
