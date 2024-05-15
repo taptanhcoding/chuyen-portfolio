@@ -12,6 +12,7 @@ import { AboutMe, Contact, Skill } from "./ui/data";
 import SkillItem, { SkillProps } from "./ui/components/SkillItem";
 // import { handleSubmit } from "./lib/action";
 import FormSend from "./ui/components/FormSend";
+import avatar from "@/public/avatar.jpeg"
 
 export default function Home() {
   return (
@@ -43,10 +44,16 @@ export default function Home() {
               <h2 className="text-[20px]">website developer.</h2>
             </div>
             <div className="w-[100vw] h-[30vw]">
-              <img
+              <Image
                 className="object-cover w-full h-full"
-                src="/avatar.jpeg"
+                src={avatar}
                 alt="chuyendev"
+                sizes="100vw"
+                // Make the image display full width
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
               />
             </div>
           </div>
