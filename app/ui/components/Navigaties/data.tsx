@@ -126,10 +126,10 @@ export const NavItems = [
         height={size}
         viewBox="0 0 32 32"
         style={{
-          "fill-rule": "evenodd",
-          "clip-rule": "evenodd",
-          "stroke-linejoin": "round",
-          "stroke-miterlimit": 2,
+          "fillRule": "evenodd",
+          "clipRule": "evenodd",
+          "strokeLinejoin": "round",
+          "strokeMiterlimit": 2,
         }}
         version="1.1"
         // xml:space="preserve"
