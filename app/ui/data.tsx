@@ -4,7 +4,7 @@ export const AboutMe = {
   title: "About Me",
   description: (
     <div className="text-center">
-      {"Hello, As you known, I am a website developer. I will do my best to make a website like your order. That is all you need to know."}
+      {"Hello, I am a web application developer. Currently, I am using Node.js and Python along with databases: MongoDB and MariaDB to deploy backend services, and React.js (ViteJs), Next.js along with libraries such as Tailwind CSS and Bootstrap 4 to develop frontend applications. As of June 2024, I have 2 years of experience in web application development. I believe that with my experience and knowledge, I can develop web applications according to your requirements."}
       <img
         alt="just a funny picture"
         className="w-[400px] max-w-full mt-3 "
