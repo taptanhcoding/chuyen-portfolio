@@ -1,15 +1,16 @@
+import ModelViewer from "./components/3dRender";
 import { SkillProps } from "./components/SkillItem";
 
 export const AboutMe = {
   title: "About Me",
   description: (
-    <div className="text-center">
+    <div className="text-center h-full">
       {"Hello, I am a web application developer. Currently, I am using Node.js and Python along with databases: MongoDB and MariaDB to deploy backend services, and React.js (ViteJs), Next.js along with libraries such as Tailwind CSS and Bootstrap 4 to develop frontend applications. As of June 2024, I have 2 years of experience in web application development. I believe that with my experience and knowledge, I can develop web applications according to your requirements."}
-      <img
-        alt="just a funny picture"
-        className="w-[400px] max-w-full mt-3 "
-        src="https://i.pinimg.com/564x/0c/9e/00/0c9e004bf87411b848d049519142e6a6.jpg"
-      />
+      <div className="flex justify-center min-h-[400px]">
+        <div className="w-full aspect-[2/1] max-w-[400px]">
+          <ModelViewer modelPath="/dog.glb" scale={[0.5,0.5,0.5]} />
+        </div>
+      </div>
     </div>
   ),
 };
