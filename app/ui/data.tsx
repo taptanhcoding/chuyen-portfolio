@@ -6,7 +6,7 @@ export const AboutMe = {
   description: (
     <div className="text-center h-full">
       {"Hello, I am a web application developer. Currently, I am using Node.js and Python along with databases: MongoDB and MariaDB to deploy backend services, and React.js (ViteJs), Next.js along with libraries such as Tailwind CSS and Bootstrap 4 to develop frontend applications. As of June 2024, I have 2 years of experience in web application development. I believe that with my experience and knowledge, I can develop web applications according to your requirements."}
-      <div className="flex justify-center min-h-[400px]">
+      <div className="flex justify-center min-h-[400px] mt-14">
         <div className="w-full aspect-[2/1] max-w-[400px]">
           <ModelViewer modelPath="/dog.glb" scale={[0.5,0.5,0.5]} />
         </div>
