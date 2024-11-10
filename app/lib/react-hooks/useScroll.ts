@@ -3,21 +3,35 @@
 import { useEffect, useState } from "react"
 
 export const useScroll = () => {
-    const [scrollToTop,setScrollToTop] = useState<number>(0)
-    
+    const [scrollToTop, setScrollToTop] = useState<number>(0)
+    const [windowHeight, setWindowHeight] = useState<number>(0)
+
     useEffect(() => {
-        let evenScroll = (e:Event) => {
-            let scroll = window.scrollY
-            setScrollToTop(scroll)
-        }
-        
-        document.addEventListener("scroll",evenScroll)
+        // Kiểm tra nếu window được định nghĩa
+        if (typeof window !== 'undefined') {
+            const handleScroll = () => {
+                setScrollToTop(window.scrollY)
+            }
 
-        return () => {
-            document.removeEventListener("scroll",evenScroll)
-        }
-    },[])
+            const handleResize = () => {
+                setWindowHeight(window.innerHeight)
+            }
 
-    return {scrollToTop,windowHeight :window.innerHeight
-    }
+            // Gán sự kiện scroll và resize
+            window.addEventListener('scroll', handleScroll)
+            window.addEventListener('resize', handleResize)
+
+            // Thiết lập giá trị ban đầu
+            handleScroll()
+            handleResize()
+
+            // Xóa sự kiện khi component bị hủy
+            return () => {
+                window.removeEventListener('scroll', handleScroll)
+                window.removeEventListener('resize', handleResize)
+            }
+        }
+    }, [])
+
+    return { scrollToTop, windowHeight }
 }
