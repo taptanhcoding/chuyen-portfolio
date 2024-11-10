@@ -13,8 +13,8 @@ function Model({ modelPath, scale }:ModelPtopsType) {
 export default function ModelViewer({ modelPath, scale = [1, 1, 1] }:ModelPtopsType) {
   return (
     <Canvas>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[10, 10, 5]} intensity={1} />
+      <ambientLight intensity={0.7} />
+      <directionalLight position={[10, 10, 0]} intensity={1} />
       <Suspense fallback={null}>
         <Model modelPath={modelPath} scale={scale} />
       </Suspense>

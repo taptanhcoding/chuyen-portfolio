@@ -279,59 +279,75 @@ export const Skill: SkillType = {
   ],
 };
 
-export const Portfolio = {
-  title: "Portfolio",
+export const Project = {
+  title: "Project",
   projects: [
-    {
-      name: "Review E-Commerce Technical",
-      description:
-        "An E-commerce website to sell laptop,Pc.etc. This project was built using React, Redux, Auth0, Stripe with features such as product listing, product details, shopping cart, user authentication with Auth0 and checkout with Stripe payment. ",
-      techs: [
-        "React",
-        "Redux",
-        "TailWind",
-        "Nodejs",
-        "Expressjs",
-        "Redis",
-        "Mongodb",
-        "Nextjs",
-      ],
-      gif_preview: "",
-      link_demo: [
+  {
+    name: "Landing Page Ocean",
+    description: "A landing page about ocean.",
+    tech: ["html","css","TailWindCss","js(jquery)"],
+    gif_preview: "/landing.gif",
+      link_demo: 
         {
-          Control: "",
+          UI: "https://taptanhcoding.github.io/landing_osean/",
         },
-        {
-          UI: "",
-        },
-      ],
-      link_git: "",
-    },
-    {
-      name: "Review mini shopee API",
-      description:
-        "An E-commerce BE website to provide API service .This project was built using Nodejs,Expressjs, Redis with features such as register shop, add and control product  ",
-      techs: ["Nodejs", "Expressjs", "Redis", "MongoDB"],
-      gif_preview: "",
-      link_demo: [
-        {
-          UI: "",
-        },
-      ],
-      link_git: "",
-    },
-    {
-      name: "Portfolio Website",
-      descroption: "This project is a preview for my skill technicial.",
-      techs: ["Nextjs", "TailWind"],
-      gif_preview: "",
-      link_demo: [
-        {
-          UI: "",
-        },
-      ],
-    },
+      
+      link_git: "https://github.com/taptanhcoding/landing_osean",
+  },
+
+    // {
+    //   name: "Review E-Commerce Technical",
+    //   description:
+    //     "An E-commerce website to sell laptop,Pc.etc. This project was built using React, Redux, Auth0, Stripe with features such as product listing, product details, shopping cart, user authentication with Auth0 and checkout with Stripe payment. ",
+    //   techs: [
+    //     "React",
+    //     "Redux",
+    //     "TailWindCss",
+    //     "Nodejs",
+    //     "Expressjs",
+    //     "Redis",
+    //     "Mongodb",
+    //     "Nextjs",
+    //   ],
+    //   gif_preview: "",
+    //   link_demo: [
+    //     {
+    //       Control: "",
+    //     },
+    //     {
+    //       UI: "",
+    //     },
+    //   ],
+    //   link_git: "",
+    // },
+    // {
+    //   name: "Review mini shopee API",
+    //   description:
+    //     "An E-commerce BE website to provide API service .This project was built using Nodejs,Expressjs, Redis with features such as register shop, add and control product  ",
+    //   techs: ["Nodejs", "Expressjs", "Redis", "MongoDB"],
+    //   gif_preview: "",
+    //   link_demo: [
+    //     {
+    //       UI: "",
+    //     },
+    //   ],
+    //   link_git: "",
+    // },
+    // {
+    //   name: "Portfolio Website",
+    //   descroption: "This project is a preview for my skill technicial.",
+    //   techs: ["Nextjs", "TailWind"],
+    //   gif_preview: "",
+    //   link_demo: [
+    //     {
+    //       UI: "",
+    //     },
+    //   ],
+    // },
   ],
+  customer_pj: [
+    
+  ]
 };
 
 export const Contact = {

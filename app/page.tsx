@@ -8,11 +8,12 @@ import {
   Navigaties,
 } from "./ui/components/Navigaties";
 import HomeItem from "./ui/components/HomeItem/homeItem";
-import { AboutMe, Contact, Skill } from "./ui/data";
+import { AboutMe, Contact, Project, Skill } from "./ui/data";
 import SkillItem, { SkillProps } from "./ui/components/SkillItem";
 // import { handleSubmit } from "./lib/action";
 import FormSend from "./ui/components/FormSend";
 import avatar from "@/public/avatar.jpeg"
+import ProjectItem from "./ui/components/ProjectItem";
 
 export default function Home() {
   return (
@@ -77,8 +78,20 @@ export default function Home() {
           </HomeItem>
 
           {/* project  */}
-          <HomeItem title="Project" id="Project">
-            Các project đã cũ và sẽ được cập nhật sớm
+          <HomeItem title={Project.title} id="Project">
+           <div className="py-4">
+            <h2 className="font-bold text-2xl mb-4">My Project</h2>
+            {
+             Project.projects.map((pj:any) => <ProjectItem {...pj} />)
+            }
+           </div>
+           <div className="py-4">
+            <h2  className="mb-4 font-bold text-2xl">For Customer</h2>
+            {Project.customer_pj.length > 0 ?
+             Project.customer_pj.map((pj:any) => <ProjectItem {...pj} />)
+             : <>Đang cập nhật...</>
+            }
+           </div>
           </HomeItem>
 
           {/* contact  */}
