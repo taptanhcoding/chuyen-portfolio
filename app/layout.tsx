@@ -20,7 +20,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${nunito.className} scroll-smooth `}>
+      <head>
+        {/* <title>shit</title> */}
+      </head>
+      <body className={`${nunito.className} scroll-smooth box-border`}>
         <Provider>{children}</Provider>
         </body>
     </html>
