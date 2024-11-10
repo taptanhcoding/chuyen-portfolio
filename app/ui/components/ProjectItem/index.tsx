@@ -8,9 +8,9 @@ interface ProjectItemProps {
   tech: string[];
   gif_preview: string;
   link_demo: {
-    UI?: string;
-    Control?: string;
-  }[];
+    UI: string | "";
+    Control: string | "";
+  };
   link_git: string;
 }
 
@@ -24,8 +24,8 @@ export default function ProjectItem({name, description, tech, gif_preview, link_
         <p>Tech: {tech.toString()}</p>
         <p>Description: {description}</p>
         {/* <p>{link_demo}</p> */}
-        <p>Demo: <a className='text-ellipsis overflow-hidden' target='_blank' href={link_demo?.UI}>{link_demo?.UI}</a></p>
-        <p>Demo: <a className='text-ellipsis overflow-hidden' target='_blank' href={link_demo?.Control}>{link_demo?.Control}</a></p>
+        <p>Demo: <a className='text-ellipsis overflow-hidden' target='_blank' href={link_demo.UI}>{link_demo.UI}</a></p>
+        <p>Demo: <a className='text-ellipsis overflow-hidden' target='_blank' href={link_demo.Control}>{link_demo.Control}</a></p>
         <p>
         Git: <a target='_blank' href={link_git}>{link_git}</a>
         </p>
