@@ -82,13 +82,13 @@ export default function Home() {
            <div className="py-4">
             <h2 className="font-bold text-2xl mb-4">My Project</h2>
             {
-             Project.projects.map((pj:any) => <ProjectItem {...pj} />)
+             Project.projects.map((pj:any,index:number) => <ProjectItem key={index.toString()} {...pj} />)
             }
            </div>
            <div className="py-4">
             <h2  className="mb-4 font-bold text-2xl">For Customer</h2>
             {Project.customer_pj.length > 0 ?
-             Project.customer_pj.map((pj:any) => <ProjectItem {...pj} />)
+             Project.customer_pj.map((pj:any,index:number) => <ProjectItem key={index.toString()} {...pj} />)
              : <>Đang cập nhật...</>
             }
            </div>
